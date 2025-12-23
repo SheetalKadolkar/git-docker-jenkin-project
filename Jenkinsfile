@@ -1,7 +1,7 @@
 pipeline {
     agent any
     environment {
-        DOCKER_IMAGE = "express-app:latest"
+        DOCKER_IMAGE = "sheetalkadolkar/express-app:latest"
     }
     stages {
         stage('Checkout') {
