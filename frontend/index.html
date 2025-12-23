@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Git Docker Jenkins Project</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Git Docker Jenkins Project</h1>
+    <p id="message"></p>
+
+    <script>
+        fetch('/api/message')
+            .then(res => res.json())
+            .then(data => document.getElementById('message').innerText = data.message);
+    </script>
+</body>
+</html>

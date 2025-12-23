@@ -1,0 +1,12 @@
+version: '3.8'
+
+services:
+  app:
+    build: ./backend
+    ports:
+      - "3000:3000"
+    volumes:
+      - ./backend:/usr/src/app
+      - ./frontend:/frontend
+    environment:
+      - NODE_ENV=development
